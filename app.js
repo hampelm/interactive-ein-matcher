@@ -112,7 +112,7 @@ $(function() {
     console.log("hash", window.location.hash);
     if (idx === '' || isNaN(idx)) {
       var storedResults = JSON.parse(localStorage.getItem('results'));
-      if (storedResults.length) {
+      if (storedResults && storedResults.length) {
         window.location.hash = '#' + storedResults.length;
         idx = storedResults.length;
       } else {

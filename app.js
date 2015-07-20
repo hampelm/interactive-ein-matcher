@@ -2,13 +2,6 @@
 Papa, FuzzySet, localStorage
 */
 
-// TODO
-// - When a result is clicked, add it to the list with name, ein,
-// and original name
-// - Use URL to move forward/backward between orgs
-// - Export results as CSV.
-// - Mark orgs as not a nonprofit / national nonprofit?
-
 $(function() {
   var orgs, irs, searchSet, selectedOrg;
   searchSet = new FuzzySet([]);
